@@ -1,0 +1,7 @@
+DROP TABLE IF EXISTS Users;
+
+CREATE TABLE Users (
+  username VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL,
+  join_date DATETIME
+);

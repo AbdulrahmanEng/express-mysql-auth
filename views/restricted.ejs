@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Express, MySQL Auth</title>
+    <link rel="stylesheet" href="/css/master.css">
+  </head>
+  <body>
+        <%- include('./navigation'); %>
+    <h1>Restricted</h1>
+    <h2>Username</h2>
+    <div><%=user.username%></div>
+    <h3>Joined</h3>
+    <div><%=user.join_date%></div>
+    <a href="/signout">Sign Out</a>
+  </body>
+</html>

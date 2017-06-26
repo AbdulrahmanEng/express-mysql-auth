@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Express, MySQL Auth</title>
+    <link rel="stylesheet" href="/css/master.css">
+  </head>
+  <body>
+        <%- include('./navigation'); %>
+    <h1>Sign In</h1>
+    <% if (flash) { %>
+      <h4 class="flash"><%= flash.message %></h4>
+    <% } %>
+    <form class="form" action="/login" method="post">
+      <label for="username">Username</label>
+      <input type="text" name="username" value="">
+      <label for="password">Password</label>
+      <input type="password" name="password" value="">
+      <button class="btn btn-login" type="submit">Log In</button>
+      <button class="btn btn-register"><a href="/signup">Register</a></button>
+    </form>
+  </body>
+</html>
